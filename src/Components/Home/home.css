@@ -1,0 +1,75 @@
+.Home{
+    background-image: url(../../assets/home/background-home-desktop.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.large-button {
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    padding: 1em;
+    border-radius: 50%;
+    width: 297px;
+    height: 280px;
+    text-decoration: none;
+    position: relative;
+    font-size: 2rem;
+  }
+.large-button::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    background-color: hsl(var(--c-white) / 20%);
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transition:  500ms linear,  750ms ease-in-out;
+    -webkit-transition:  500ms linear,  750ms ease-in-out;
+    -moz-transition:  500ms linear,  750ms ease-in-out;
+    -ms-transition:  500ms linear,  750ms ease-in-out;
+    -o-transition:  500ms linear,  750ms ease-in-out;
+}
+  
+  .large-button:hover::after,
+  .large-button:hover:after {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  
+.Home-container{
+padding-top: 200px;
+}
+
+@media only screen and (max-width: 600px)
+
+{
+  .Home{
+    background-image: url(../../assets/home/background-home-mobile.jpg) ;
+    height: 100vh;
+    background-position: center; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    
+  }
+  .Home-container{
+    padding-top: 80px;
+    }
+    .large-button {
+      width: 190px;
+      height: 180px;
+    }
+    .text h1 {
+      font-size: 0.8rem !important;
+    }
+    .text {
+      text-align: center;
+    }
+.button{
+display: flex;
+justify-content: center;
+}
+}

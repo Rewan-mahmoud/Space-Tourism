@@ -1,0 +1,23 @@
+.technology
+{
+background-image: url(../../assets/technology/background-technology-desktop.jpg);
+height: 100vh;
+position: center center;
+}
+.technology h1 {
+    margin-top: 130px;
+}
+.number-indicators button{
+  
+ border: solid 1px hsl(var(--c-white) / 25%);
+ border-radius: 50%;
+width: 80px;
+height: 80px;
+display: grid;
+ place-items: center;
+background-color: transparent;
+color: white;
+font-size: 2rem;
+margin-top: 15px;
+ cursor: pointer;
+}
